@@ -1,0 +1,50 @@
+@keyframes btn-press-bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(3px) scale(0.97);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+.btn:active,
+.interface-btn:active,
+input[type="range"]:active,
+.slider:active {
+  animation: btn-press-bounce 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.bouncy-hover:active {
+  animation: btn-press-bounce 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.bouncy-hover:focus-visible {
+  outline: 2px solid transparent;
+  animation: btn-press-bounce 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.bouncy-hover:hover {
+  transform: translateY(0) scale(1.03);
+  transition: transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes inputPushUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-input-push {
+  animation: inputPushUp 360ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}

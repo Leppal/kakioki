@@ -1,0 +1,39 @@
+[data-theme="dark"] .interface-btn,
+[data-theme="dark"] .remove-friend-btn,
+[data-theme="dark"] .block-btn {
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .interface-btn:hover,
+[data-theme="dark"] .remove-friend-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .btn-close {
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .btn-close:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .user-header,
+[data-theme="dark"] .chat-input-area,
+[data-theme="dark"] .searchbar-item,
+[data-theme="dark"] .header-background,
+[data-theme="dark"] .chatInputUI {
+  background: rgba(50, 50, 50, 0.35);
+}
+
+[data-theme="dark"] .media-preview-item {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .btnRemoveMedia:hover,
+[data-theme="dark"] .block-btn:hover {
+  background-color: var(--color-red-500);
+}
